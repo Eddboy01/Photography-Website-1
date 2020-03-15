@@ -19,6 +19,118 @@ body {
     "nav main main main"
     "nav main main main";
 }
+
+/* NAVIGATION SECTION */
+.navigation {
+  position: relative;
+  grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #333;
+  color: #fff;
+}
+.navigation img {
+  max-width: 100px;
+  position: relative;
+  bottom: 110px;
+  right: 18px;
+}
+.navigation ul li {
+  margin: 40px 0;
+  list-style: none;
+}
+.navigation footer {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(82, 128, 253);
+}
+/* MAIN LANDING SECTION */
+.main {
+  grid-area: main;
+  position: relative;
+  overflow-y: auto;
+}
+.main .img-container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: url(../img/aperture-black-blur-camera-274973.jpg);
+  background-position: center;
+  background-size: cover;
+  filter: blur(2px);
+}
+.main .img-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(49, 48, 48, 0.575);
+}
+.main .landing-content {
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 6rem;
+  text-align: center;
+}
+.main .landing-content h1 {
+  font-size: 3rem;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+.main .landing-content p {
+  margin-bottom: 20px;
+}
+.main .landing-content .btn {
+  padding: 0.6rem 1.2rem;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+/* MESSAGE SECTION */
+.main .message-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  padding: 1.3rem;
+  text-align: center;
+  line-height: 1.7;
+}
+.main .message-section img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.main .message-section h2 {
+  margin-bottom: 18px;
+}
+.main .message-section .msg-btn {
+  padding: 0.6rem 1.2rem;
+  margin-top: 15px;
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+footer {
+  padding: 2rem;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+}
 /* MEDIA QUERIES FOR MOBILE */
 @media (min-width: 800px) {
   body .header .main a.hide,
@@ -85,113 +197,4 @@ body {
   .header .main .landing-content .btn {
     font-size: 1.4rem;
   }
-}
-.navigation {
-  position: relative;
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #333;
-  color: #fff;
-}
-.navigation img {
-  max-width: 100px;
-  position: relative;
-  bottom: 110px;
-  right: 18px;
-}
-.navigation ul li {
-  margin: 40px 0;
-  list-style: none;
-}
-.navigation footer {
-  position: absolute;
-  height: 50px;
-  width: 100%;
-  bottom: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(82, 128, 253);
-}
-
-.main {
-  grid-area: main;
-  position: relative;
-  overflow-y: auto;
-}
-.main .img-container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: url(../img/aperture-black-blur-camera-274973.jpg);
-  background-position: center;
-  background-size: cover;
-  filter: blur(2px);
-}
-.main .img-overlay {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  background-color: rgba(49, 48, 48, 0.575);
-}
-.main .landing-content {
-  color: #fff;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  padding: 6rem;
-  text-align: center;
-}
-.main .landing-content h1 {
-  font-size: 3rem;
-  letter-spacing: 3px;
-  margin-bottom: 20px;
-}
-.main .landing-content p {
-  margin-bottom: 20px;
-}
-.main .landing-content .btn {
-  padding: 0.6rem 1.2rem;
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-}
-.main .message-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 400px;
-  padding: 1.3rem;
-  text-align: center;
-  line-height: 1.7;
-}
-.main .message-section img {
-  max-width: 100px;
-  display: block;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-.main .message-section h2 {
-  margin-bottom: 18px;
-}
-.main .message-section .msg-btn {
-  padding: 0.6rem 1.2rem;
-  margin-top: 15px;
-  background-color: transparent;
-  border: 2px solid #333;
-  border-radius: 5px;
-}
-footer {
-  padding: 2rem;
-  text-align: center;
-  background-color: #333;
-  color: #fff;
 }
