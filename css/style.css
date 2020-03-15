@@ -19,6 +19,22 @@ body {
     "nav main main main"
     "nav main main main";
 }
+@media (min-width: 800px) {
+  body .header .main a.hide,
+  .header .navigation .close-btn {
+    display: none;
+  }
+}
+@media (min-height: 100px) {
+  body .header {
+    height: 100vh;
+  }
+  .header .navigation img {
+    position: absolute;
+    top: 20px;
+    left: 35%;
+  }
+}
 @media (max-width: 800px) {
   .header {
     height: 100vh;
@@ -38,6 +54,7 @@ body {
     height: 100%;
     width: 80%;
     left: -80%;
+    overflow-y: scroll;
   }
   .header .navigation.active {
     left: 0;
@@ -146,6 +163,17 @@ body {
   background-color: transparent;
   color: #fff;
   border: 2px solid #fff;
+}
+.main .message-section {
+  padding: 1.3rem;
+  text-align: center;
+  line-height: 1.7;
+}
+.main .message-section img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 footer {
   padding: 2rem;
