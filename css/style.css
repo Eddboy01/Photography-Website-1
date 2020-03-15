@@ -42,8 +42,14 @@ body {
   .header .navigation.active {
     left: 0;
   }
-  .header .main a {
+  .header .navigation .close-btn {
     position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.6rem;
+  }
+  .header .main a {
+    position: fixed;
     z-index: 3;
     top: 20px;
     left: 20px;
@@ -56,7 +62,7 @@ body {
   }
   .header .main .landing-content p {
     font-size: 1.4rem;
-    line-height: 1.7;
+    line-height: 1.6;
   }
   .header .main .landing-content .btn {
     font-size: 1.4rem;
