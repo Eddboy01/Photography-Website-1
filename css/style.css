@@ -19,6 +19,7 @@ body {
     "nav main main main"
     "nav main main main";
 }
+/* MEDIA QUERIES FOR MOBILE */
 @media (min-width: 800px) {
   body .header .main a.hide,
   .header .navigation .close-btn {
@@ -54,7 +55,7 @@ body {
     height: 100%;
     width: 80%;
     left: -80%;
-    overflow-y: scroll;
+    overflow-y: auto;
   }
   .header .navigation.active {
     left: 0;
@@ -115,8 +116,6 @@ body {
   justify-content: center;
   background-color: rgb(82, 128, 253);
 }
-
-/* MEDIA QUERIES FOR MOBILE */
 
 .main {
   grid-area: main;
@@ -179,6 +178,16 @@ body {
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
+}
+.main .message-section h2 {
+  margin-bottom: 18px;
+}
+.main .message-section .msg-btn {
+  padding: 0.6rem 1.2rem;
+  margin-top: 15px;
+  background-color: transparent;
+  border: 2px solid #333;
+  border-radius: 5px;
 }
 footer {
   padding: 2rem;
