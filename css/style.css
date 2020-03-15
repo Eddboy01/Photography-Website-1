@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Lato", sans-serif;
+  position: relative;
 }
 .header {
   height: 100vh;
@@ -17,6 +18,39 @@ body {
     "nav main main main"
     "nav main main main"
     "nav main main main";
+}
+@media (max-width: 800px) {
+  .header {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 0.7fr 1.3fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+      "main main main main"
+      "main main main main"
+      "main main main main"
+      "main main main main";
+  }
+  .header .navigation {
+    grid-area: auto;
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    width: 80%;
+    left: -80%;
+  }
+  .header .navigation.active {
+    left: 0;
+  }
+  .header .main a {
+    position: absolute;
+    z-index: 3;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.6rem;
+  }
 }
 .navigation {
   position: relative;
@@ -48,6 +82,9 @@ body {
   justify-content: center;
   background-color: rgb(82, 128, 253);
 }
+
+/* MEDIA QUERIES FOR MOBILE */
+
 .main {
   grid-area: main;
   position: relative;
