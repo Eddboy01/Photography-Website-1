@@ -19,16 +19,34 @@ body {
     "nav main main main";
 }
 .navigation {
+  position: relative;
   grid-area: nav;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #333;
   color: #fff;
+}
+.navigation img {
+  max-width: 100px;
+  position: relative;
+  bottom: 110px;
+  right: 18px;
 }
 .navigation ul li {
   margin: 40px 0;
   list-style: none;
+}
+.navigation footer {
+  position: absolute;
+  height: 50px;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(82, 128, 253);
 }
 .main {
   grid-area: main;
