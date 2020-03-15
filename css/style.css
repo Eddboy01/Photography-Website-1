@@ -10,7 +10,7 @@ body {
 .header {
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 0.7fr 1.3fr 1fr 1fr;
   grid-template-rows: repeat(4, 1fr);
   grid-template-areas:
     "nav main main main"
@@ -20,6 +20,15 @@ body {
 }
 .navigation {
   grid-area: nav;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  color: #fff;
+}
+.navigation ul li {
+  margin: 40px 0;
+  list-style: none;
 }
 .main {
   grid-area: main;
