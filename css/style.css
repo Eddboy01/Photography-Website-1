@@ -51,6 +51,9 @@ body {
     color: #fff;
     font-size: 1.6rem;
   }
+  .header .main .landing-content {
+    padding: 2rem;
+  }
   .header .main .landing-content p {
     font-size: 1.4rem;
     line-height: 1.7;
