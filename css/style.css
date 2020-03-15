@@ -51,6 +51,13 @@ body {
     color: #fff;
     font-size: 1.6rem;
   }
+  .header .main .landing-content p {
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+  .header .main .landing-content .btn {
+    font-size: 1.4rem;
+  }
 }
 .navigation {
   position: relative;
