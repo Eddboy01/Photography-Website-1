@@ -85,7 +85,6 @@ body {
   text-align: center;
 }
 .main .landing-content h1 {
-  font-size: 3rem;
   letter-spacing: 3px;
   margin-bottom: 20px;
 }
@@ -97,6 +96,8 @@ body {
   background-color: transparent;
   color: #fff;
   border: 2px solid #fff;
+  border-radius: 5px;
+  font-size: 1rem;
 }
 /* MESSAGE SECTION */
 .main .message-section {
